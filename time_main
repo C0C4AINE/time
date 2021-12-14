@@ -1,0 +1,14 @@
+import os
+import datetime
+
+
+while True:
+    agora = datetime.datetime.now()
+
+    alvo = agora.strftime("%H:%M:%S")
+
+    meta = datetime.time(14, 3, 0)
+
+    if alvo == meta.strftime("%H:%M:%S"):
+        print('INICIANDO PROGRAMA')
+        break
