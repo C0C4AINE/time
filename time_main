@@ -1,14 +1,13 @@
-import os
 import datetime
 
-
+# Looping procurando o horario
 while True:
-    agora = datetime.datetime.now()
+    agora = datetime.datetime.now()  # Pega a hora exata do computador
 
-    alvo = agora.strftime("%H:%M:%S")
+    alvo = agora.strftime("%H:%M:%S")   # O alvo recebe o horario de agora formatado (Hora:Minuto:Segundo)
 
-    meta = datetime.time(14, 3, 0)
+    meta = datetime.time(14, 3, 0)   # Coloque o horario que deseja
 
-    if alvo == meta.strftime("%H:%M:%S"):
-        print('INICIANDO PROGRAMA')
-        break
+    if alvo == meta.strftime("%H:%M:%S"):   # Se o Alvo for igual ao horario Meta formatado (Hr:Min:Sec)
+        print('INICIANDO PROGRAMA')     # Inicie
+        break   # Pare por aqui
